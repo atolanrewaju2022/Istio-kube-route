@@ -68,7 +68,7 @@ service:
   
   ```
   
- # Istio Architecture 
+ # How Istio and Kubernetes integrate ?
  
   ![image](https://github.com/atolanrewaju2022/Istio-kube-route/assets/135293313/7bc7350d-546b-4e67-80f9-8a0358cdd1ab)
 
