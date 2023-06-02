@@ -1,0 +1,19 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: account-manager-virtualservice
+  namespace: default
+spec:
+  gateways:
+  - account-manager-gateway
+  hosts:
+  - "*"
+  http:
+  - match:
+    - uri:
+        prefix: /
+    route:
+    - destination:
+        host: account-manager-svc.user-mgmt.svc.cluster.local 
+        port:
+          number: 80
