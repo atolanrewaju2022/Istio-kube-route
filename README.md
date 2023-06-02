@@ -23,7 +23,7 @@ metadata:
     alb.ingress.kubernetes.io/actions.ssl-redirect: '{"Type": "redirect", "RedirectConfig":
       { "Protocol": "HTTPS", "Port": "443", "StatusCode": "HTTP_301"}}'
     alb.ingress.kubernetes.io/backend-protocol: HTTP
-    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:060866400000:certificate/703dcf11-8357-4465-9162-db1c20565348
+    alb.ingress.kubernetes.io/certificate-arn: 
     alb.ingress.kubernetes.io/healthcheck-path: "/healthz/ready"
     alb.ingress.kubernetes.io/healthcheck-port: "31100"
     alb.ingress.kubernetes.io/healthcheck-interval-seconds: '30'
@@ -31,8 +31,8 @@ metadata:
     alb.ingress.kubernetes.io/healthcheck-protocol: HTTP
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS":443}]'
     alb.ingress.kubernetes.io/target-type: instance
-    alb.ingress.kubernetes.io/subnets: subnet-25a08809,subnet-acfd4ecb,subnet-c81548c4,subnet-edcc34d2
-    alb.ingress.kubernetes.io/security-groups: sg-079b741ff8602879c
+    alb.ingress.kubernetes.io/subnets: 
+    alb.ingress.kubernetes.io/security-groups: 
     alb.ingress.kubernetes.io/scheme: internet-facing
     kubernetes.io/ingress.class: alb
 spec:
@@ -62,8 +62,8 @@ spec:
 service:
    name: http-manager
    type: NodePort      #ClusterIP
-   port: 9000
-   targetPort: 9000
+   port: 80
+   targetPort: 80
    protocol: TCP
   
   ```
