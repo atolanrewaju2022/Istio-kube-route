@@ -2,7 +2,7 @@
 # kind: DestinationRule
 # metadata:
 #   name: account-manager-destinationrule
-#   namespace: dlframe
+#   namespace: default
 # spec:
 #   host: account-manager-svc
 #   trafficPolicy:
