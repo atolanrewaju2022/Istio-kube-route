@@ -1,7 +1,7 @@
 apiVersion: networking.istio.io/v1beta1
 kind: Gateway
 metadata:
-  name: account-manager-gateway
+  name: user-mgmt-gateway
   namespace: default
 spec:
   selector:
