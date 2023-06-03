@@ -5,7 +5,7 @@ metadata:
   namespace: default
 spec:
   gateways:
-  - account-manager-gateway
+  - user-mgmt-gateway
   hosts:
   - "*"
   http:
@@ -14,6 +14,6 @@ spec:
         prefix: /
     route:
     - destination:
-        host: account-manager-svc.user-mgmt.svc.cluster.local 
+        host: user-mgmt-svc.user-mgmt.svc.cluster.local 
         port:
           number: 80
