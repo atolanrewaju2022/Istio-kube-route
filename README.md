@@ -32,16 +32,16 @@ metadata:
     alb.ingress.kubernetes.io/actions.ssl-redirect: '{"Type": "redirect", "RedirectConfig":
       { "Protocol": "HTTPS", "Port": "443", "StatusCode": "HTTP_301"}}'
     alb.ingress.kubernetes.io/backend-protocol: HTTP
-    alb.ingress.kubernetes.io/certificate-arn: 
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:873079457075:certificate/736fc99b-0afa-4375-bc17-7d735304178e 
     alb.ingress.kubernetes.io/healthcheck-path: "/healthz/ready"
-    alb.ingress.kubernetes.io/healthcheck-port: "31100"
+    alb.ingress.kubernetes.io/healthcheck-port: "30571"
     alb.ingress.kubernetes.io/healthcheck-interval-seconds: '30'
     alb.ingress.kubernetes.io/healthcheck-timeout-seconds: '5'
     alb.ingress.kubernetes.io/healthcheck-protocol: HTTP
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS":443}]'
     alb.ingress.kubernetes.io/target-type: instance
-    alb.ingress.kubernetes.io/subnets: 
-    alb.ingress.kubernetes.io/security-groups: 
+    alb.ingress.kubernetes.io/subnets: subnet-0d89b5c5d6408d933, subnet-0a76124af7446da9e , subnet-0c6ec63408363ceac
+    alb.ingress.kubernetes.io/security-groups: sg-072297a0a2759dfbf
     alb.ingress.kubernetes.io/scheme: internet-facing
     kubernetes.io/ingress.class: alb
 spec:
