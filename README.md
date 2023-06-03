@@ -15,7 +15,7 @@ curl -L https://istio.io/downloadIstio | sh -
 export PATH=$PWD/bin:$PATH
 
 #Install istio and set values for ingressgateway type to NodePort 
-istioctl install   --set  profile=default   --set  values.gateways.istio-ingressgateway.type=NodePort  --set meshConfig.outboundTrafficPolicy.mode=ALLOW_ANY    --set meshConfig.accessLogFile=/dev/stdout                                                                                                                                                                        Making this installation the default for injection and validation.
+istioctl install   --set  profile=default   --set  values.gateways.istio-ingressgateway.type=NodePort  --set meshConfig.outboundTrafficPolicy.mode=ALLOW_ANY    --set meshConfig.accessLogFile=/dev/stdout                                                                                                                                                       
 
 #Install ALB ingress controller
 Load Balancer Controller Installation
