@@ -5,6 +5,15 @@
 
 
 ``` bash 
+#Download Istio 
+curl -L https://istio.io/downloadIstio | sh -
+
+#Change to the Istio package directory
+ cd istio-1.17.2
+ 
+#Add the istioctl client to your path (Linux or macOS):
+export PATH=$PWD/bin:$PATH
+
 #Install istio and set values for ingressgateway type to NodePort 
 istioctl install   --set  profile=default   --set  values.gateways.istio-ingressgateway.type=NodePort  --set meshConfig.outboundTrafficPolicy.mode=ALLOW_ANY    --set meshConfig.accessLogFile=/dev/stdout                                                                                                                                                                        Making this installation the default for injection and validation.
 
